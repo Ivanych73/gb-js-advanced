@@ -1,0 +1,23 @@
+.goods-list {
+    border: 2px solid $black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: $linen;
+}
+
+.goods-item {
+    border: 1px solid $wheat;
+    min-width: 150px;
+    min-height: 100px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    background-color: $white;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    color: $cinnabar;
+}
