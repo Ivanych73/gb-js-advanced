@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Hamburger</title>
+    <script src="js/task3.js"></script>
+</head>
+<body>
+    <section>
+        <h2>Выбрать заказ</h1>
+        <div>
+            <h3>Выберите размер</h3>
+            <input type="radio" id="largeHamburger" name="size"
+            value="large" checked>
+            <label for="largeHamburger">Большой</label>
+            <input type="radio" id="smallHamburger" name="size"
+            value="small">
+            <label for="smallHamburger">Маленький</label>
+            <h3>Выберите начинку</h3>
+            <input type="radio" id="cheese" name="stuffing"
+            value="cheese">
+            <label for="cheese">С сыром</label>
+            <input type="radio" id="salad" name="stuffing"
+            value="salad">
+            <label for="salad">С салатом</label>
+            <input type="radio" id="potato" name="stuffing"
+            value="potato">
+            <label for="potato">С картофелем</label>
+            <h3>Выберите добавку</h3>
+            <input type="checkbox" id="spice" name="topping" value="spice">
+            <label for="spice">Приправа</label>
+            <input type="checkbox" id="maio" name="topping" value="maio">
+            <label for="maio">Майонез</label>
+        </div>
+    </section>
+    <section>
+        <div class="customer-choice"></div>
+    </section>
+    <section>
+        <h2>Посчитать заказ</h2>
+        <button type="button" id="count-price">Посчитать цену</button>
+        <button type="button" id="count-calories">Посчитать калории</button>
+        <div class="chosen-price"></div>
+        <div class="chosen-calories"></div>
+    </section>
+</body>
+</html>
