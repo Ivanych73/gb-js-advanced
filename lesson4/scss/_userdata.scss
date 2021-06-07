@@ -1,0 +1,22 @@
+.userdata-form {
+   display: flex;
+   flex-direction: column;
+
+   &__short {
+    width: 30%;
+   }
+
+   &__send-button {
+      max-width: 150px;
+      min-height: 50px;
+      margin: 20px 0 0 0;
+   }
+}
+
+.outline-red {
+   outline: 2px solid $cinnabar;
+}
+
+.replace-button {
+   margin: 20px 0;
+}
