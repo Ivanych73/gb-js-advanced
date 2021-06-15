@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework4</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">it's a homework for lesson 4 of javascript advanced learing course by geekbrains</h1>
+    </header>
+
+    <main>
+        <div class="non-bootstrap-container">
+            <section class="homework">
+                <h2 class="visually-hidden">Содержание домашней работы</h2>
+                <div class="homework__task">
+                    <h3 class="homework__task-title">задание 1 -2</h3>
+                    <span class="homework__task-text">Дан большой текст, в котором для оформления прямой речи
+                        используются одинарные кавычки. Придумать шаблон, который заменяет одинарные кавычки на
+                        двойные</span>
+                    <span class="homework__task-text">Улучшить шаблон так, чтобы в конструкциях типа aren't одинарная
+                        кавычка не заменялась на двойную.</span>
+                    </span>
+                    <div class="homework__answer flex-dc-wrapper">
+                        <textarea name="quotes-text" id="quotes-text" cols="100" rows="10"></textarea>
+                        <button class="replace-button">Заменить одинарные кавычки</button>
+                        <div data-id="task1-result"></div>
+                    </div>
+                </div>
+                <div class="homework__task">
+                    <h3 class="homework__task-title">задание 3</h3>
+                    <span class="homework__task-text">Создать форму обратной связи с полями: Имя, Телефон, E-mail,
+                        текст, кнопка Отправить. При нажатии на кнопку Отправить произвести валидацию полей следующим
+                        образом:</span>
+                    <span class="homework__task-text">a. Имя содержит только буквы.</span>
+                    <span class="homework__task-text">b. Телефон имеет вид +7(000)000-0000.</span>
+                    <span class="homework__task-text">c. E-mail имеет вид mymail@mail.ru, или my.mail@mail.ru, или
+                        my-mail@mail.ru.</span>
+                    <span class="homework__task-text">d. Текст произвольный.</span>
+                    <span class="homework__task-text">e. Если одно из полей не прошло валидацию, необходимо выделить это
+                        поле красной рамкой и сообщить пользователю об ошибке.</span>
+                    <div class="homework__answer">
+                        <form action="#" class="userdata-form">
+                            <label for="input-name">Имя</label>
+                            <input type="text" id="input-name" class="userdata-form__short">
+                            <label for="input-phone">Телефон</label>
+                            <input type="text" id="input-phone" class="userdata-form__short">
+                            <label for="input-email">E-mail</label>
+                            <input type="text" id="input-email" class="userdata-form__short">
+                            <label for="input-text">Текст</label>
+                            <textarea name="comments" id="input-text" cols="30" rows="10"
+                                class="userdata-form__short"></textarea>
+                            <div class="error-msg"></div>
+                            <button type="button" class="userdata-form__send-button">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper non-bootstrap-container">
+            <h2 class="visually-hidden">copyright</h2>
+            <p>&copy; 2021 by ivanych73 all rights reserved</p>
+            <p>content provided by geekbrains &reg;</p>
+        </div>
+    </footer>
+</body>
+
+</html>
