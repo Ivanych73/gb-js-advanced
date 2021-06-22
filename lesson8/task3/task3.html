@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework8</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">it's a homework for lesson 8 of javascript advanced learing course by geekbrains</h1>
+    </header>
+    <main>
+        <div class="non-bootstrap-container">
+            <section class="homework">
+                <h2 class="visually-hidden">Содержание домашней работы</h2>
+                <div class="homework__task">
+                    <h3 class="homework__task-title">задание 3</h3>
+                    <span class="homework__task-text">*Написать приложение-калькулятор, используя подход BDD. Приложение должно состоять из четырёх методов для сложения, вычитания, умножения и деления. Каждый метод принимает на вход два аргумента и выполняет действие. При написании тестов учесть случаи, когда на вход подаются не числа, а строки, null или undefined.</span>
+                    <div class="homework__answer flex-dc-wrapper">
+                        <div id="app">
+                            <input type="text" v-model="currentNumber">
+                            <div>
+                                <button @click="chooseSum">+</button>
+                                <button @click="chooseSub">-</button>
+                                <button @click="chooseMul">*</button>
+                                <button @click="chooseDiv">/</button>
+                                <button @click="performCalc">=</button>
+                                <button @click="clearValues">Clear</button>
+                            </div>
+                            <p>{{firstNumber}}</p>
+                            <p>{{displayAction}}</p>
+                            <p>{{secondNumber}}</p>
+                            <p v-if="result!==undefined"> = {{result}}</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper non-bootstrap-container">
+            <h2 class="visually-hidden">copyright</h2>
+            <p>&copy; 2021 by ivanych73 all rights reserved</p>
+            <p>content provided by geekbrains &reg;</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
